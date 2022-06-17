@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Comic+Neue&family=Montserrat&family=Source+Sans+Pro&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#navbar {
+    padding: 20px 64px;
+    background-color: #ffffff;
+}
+
+
+/* NAVBAR CLASS */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+}
+
+.navbar a {
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: 'Comic Neue', cursive;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 100%;
+    text-align: left;
+}
+
+.navbar span {
+    color: #27ae60;
+    font-weight: bolder;
+}
+
+.navbar button {
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: 1px solid #27ae60;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 50px;
+    color: #000;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#navlinks-right li, #navlinks-left li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.headerover .container {
+    margin-top: 2em;
+}
+
+.header-left {
+    width: 100%;
+}
+
+.header-left h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding-top: 2em;
+}
+
+.header-left .box {
+    width: 100px;
+    height: 10px;
+    border: solid 5px #000;
+    border-color: transparent transparent #27ae60 transparent;
+    border-radius: 0 0 10px 240%/50px;
+}
+
+.header-left .buttonHead a:last-child {
+    border: 1px solid #27ae60;
+    background-color: #fff;
+    opacity: 1;
+    color: black;
+}
+
+.header-left .buttonHead a:last-child:hover {
+    background-color: #27ae60;
+    transition: 1s;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.header-left .buttonHead a {
+    width: 180px;
+    background-color: #27ae60;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 50px 10px 0px 0px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-left .buttonHead a:hover {
+    background-color: #fff;
+    transition: 1s;
+    color: #000000;
+    border: 1px solid #27ae60;
+    border-radius: 0;
+}
+
+.imgside img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#not img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* HEADER CLASS
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.header-left {
+    margin: 150px 20px;
+    width: 38vw;
+}
+
+.header-left h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.header-left .buttonHead a:last-child {
+    border: 1px solid #27ae60;
+    background-color: #fff;
+    opacity: 1;
+    color: black;
+}
+
+.header-left .buttonHead a {
+    width: 180px;
+    background-color: #27ae60;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.imgside {
+    margin-top: 80px;
+}
+
+.imgside img{
+    border-radius: 20px;
+    width: 49vw;
+    height: 60vh;
+    object-fit: cover;
+    padding-right: 70px 50px;
+}
+*/
+
+
+
+
+
+
+
+
+/* Section Body 1 */
+
+#body1 {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+#body1 .basictext h3 {
+    font-family: 'Comic Neue', cursive;
+    margin-bottom: 60px;
+    font-weight: bolder;
+}
+
+#body1 .basicstep .startfund img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#body1 .basicstep .startfund .class2 {
+    padding-top: 2;
+}
+
+#body1 .basicoffer {
+    margin: 5em 0;
+}
+
+#body1 .whatoffer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+#body1 .whatoffer .image1 {
+    position: relative;
+}
+
+#body1 .whatoffer img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 20em;
+}
+
+#body1 .whatoffer .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,.5), #6acfc5);
+    opacity: 0;
+    transition: 1s;
+}
+
+#body1 .whatoffer .image1:hover .overlay {
+    opacity: 1;
+}
+
+#body1 .whatoffer .whatoffertext {
+    width: 80%;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+    opacity: 0;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+#body1 .whatoffer .whatoffertext hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 80%;
+}
+
+#body1 .whatoffer .whatoffertext p {
+    font-size: 14px;
+}
+
+#body1 .whatoffer .image1:hover .whatoffertext {
+    bottom: 10%;
+    opacity: 1;
+}
+
+#body2 .basicready {
+    margin-top: 50px;
+    background: linear-gradient(#27ae60, hsla(142, 19%, 92%, 0.938));
+}
+
+#body2 .basicready .readytext h1 {
+    padding-top: 5em !important;
+    font-weight: bolder;
+    font-family: 'Comic Neue', cursive;
+    border-radius: 20px;
+}
+
+#body2 .basicready  img{
+    width: 20em;
+}
+
+#body2 .basicready  .imgready {
+    text-align: center;
+}
+
+#body2 .basicready .readybtn a {
+    width: 180px;
+    background-color: #27ae60;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin: 50px 10px 0px 0px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+#body2 .basicready .readybtn a:last-child {
+    border: 1px solid #27ae60;
+    background-color: #fff;
+    opacity: 1;
+    color: black;
+}
+
+
+/* TESTIMONIALS */
+#testimonials {
+    margin-bottom: 10em;
+} 
+
+#testimonials .testimony h2 {
+    padding-top: 2em;
+    font-weight: bolder;
+    font-family: 'Comic Neue', cursive;
+}
+
+
+#testimonials .profile {
+    margin: 5em 0;
+    padding: 70px 10px 10px;
+    background: linear-gradient(#27ae60, hsla(142, 19%, 92%, 0.938));
+    position: relative;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+}
+
+#testimonials .profile:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#testimonials .profile .user {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#testimonials .profile img{
+    object-fit: cover;
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+
+#testimonials .profile blockquote {
+    font-size: 1em;
+}
+
+#testimonials .profile h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+#testimonials .profile span {
+    font-size: 12px;
+    color: #333;
+}
+
+#testimonials blockquote {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+#testimonials blockquote::before {
+    content: '\93';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+
+#testimonials blockquote::after {
+    content: '\94';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+
+#videotext {
+    margin-bottom: 10em;
+}
+
+#videotext .videotext .container {
+    margin: 20px 0;
+}
+
+#videotext .videotext h2 {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+    padding: 30px 0;
+}
+
+
+#videotext ul li {
+    text-decoration: none;
+    list-style-type: none !important;
+    font-family: 'Akshar', sans-serif;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+
+i {
+    font-size: 1em;
+    color: #27ae60;
+}
+
+#frequent-ask .ask-drop hr {
+    color: #ffffff;
+}
+
+#frequent-ask {
+    padding: 7em 0;
+    margin-bottom: 10em;
+    background-image: url('img/bg_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#frequent-ask .ask-text {
+    text-align: left;
+}
+
+#frequent-ask h2 {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#frequent-ask p {
+    color: #ffffff;
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.1em;
+}
+
+#frequent-ask .ask-text p {
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: left;
+    width: 80%;
+    line-height: 1.8em;
+}
+
+#frequent-ask .ask-drop .ask-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+#frequent-ask .ask-drop .ask-icon i {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+#frequent-ask .ask-drop .ask-display {
+    display: none;
+}
+
+
+/* Owl carousel testing */
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+
+#campaign {
+    background: linear-gradient(to right, #27ae60, #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em 0;
+    margin: 2em 0;
+}
+
+#campaign h2 {
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.owl-carousel {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    height: 100;
+}
+
+.owl-carousel .owl-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card {
+    padding: 20px;
+    position: relative;
+    width: 25em;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow-y: auto !important;
+    padding-bottom: 40px;
+}
+
+.owl-carousel .owl-item img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.owl-carousel .owl-item .card .name {
+    position: absolute;
+    bottom: -20px;
+    width: fit-content;
+    left: 33%;
+    color: #101c81;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: aquamarine;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px #3c405a;
+}
+
+.owl-carousel .owl-item .card {
+    opacity: 0.2;
+    transform: scale3d(0.8, 0.8, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card:hover {
+    box-shadow: 0 0 15px 5px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.owl-carousel .owl-item .card .testimonial {
+    text-align: left;
+    color: #000000;
+    font-family: 'Akshar', sans-serif;
+}
+
+.owl-carousel .owl-item .card .testimonial h3 {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bolder;
+}
+
+.owl-carousel .owl-item .card .testimonial  span {
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Comic Neue', cursive;
+    text-decoration: underline;
+}
+.owl-carousel .owl-item .card .testimonial  span:hover {
+    color: #27ae60;
+}
+
+.owl-carousel .owl-item.active.center .card {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    background: #2a6ba3 !important;
+    border-radius: 2px !important;
+    opacity: 0.8;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    height: 13px;
+    width: 13px;
+    opacity: 1;
+    transform: translateY(2px);
+    background: #83b8e7 !important;
+}
+
+@media(min-width: 480.6px) and (max-width: 575.5px) {
+    .owl-carousel .owl-item .card .name {
+        left: 24%;
+    }
+}
+
+@media(max-width: 360px) {
+    .owl-carousel .owl-item .card .name {
+        left: 30%;
+    }
+}
+
+footer {
+    padding: 5em 0;
+}
+
+footer .logo-text {
+    padding-top: 30px;
+}
+
+footer .logo-text h6 {
+    font-weight: bolder;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2em;
+}
+
+footer .logo-text p {
+    font-weight: normal;
+    font-family: 'Akshar', sans-serif;
+    font-size: 1em;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    text-decoration: none;
+    padding: 0.4em 0;
+    list-style: none;
+    text-align: left;
+}
+
+footer p {
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-family: 'Comic Neue', cursive;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+    font-family: 'Akshar', sans-serif;
+    font-weight: 100;
+}
+
+
+
